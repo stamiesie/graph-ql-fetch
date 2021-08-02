@@ -1,18 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./App";
+// import { createClient, Provider } from 'urql';
 
-import App from "./App";
+// const client = createClient({
+//   url: 'https://api.spacex.land/graphql/',
+// });
 
-const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
-  cache: new InMemoryCache()
-});
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
-  rootElement
-);
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(
+//   <Provider value={client}>
+//     <App />
+//   </Provider>,
+//   rootElement
+// );
